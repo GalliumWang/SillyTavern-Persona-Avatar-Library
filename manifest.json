@@ -1,0 +1,11 @@
+{
+  "display_name": "人设头像库 · Persona Avatar Library",
+  "loading_order": 100,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "Gallium Wang",
+  "version": "1.0.0",
+  "homePage": "https://github.com/GalliumWang/SillyTavern-Persona-Avatar-Library"
+}

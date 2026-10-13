@@ -1,0 +1,41 @@
+#persona-avatar-library, .pal-dialog { --pal-accent: #8bd7bc; --pal-line: rgba(160, 170, 180, .25); }
+#persona-avatar-library .inline-drawer-content { padding: 8px 0; }
+#persona-avatar-library .pal-field { display: grid; gap: 6px; margin: 14px 0; }
+#persona-avatar-library select, .pal-dialog select { width: 100%; min-height: 40px; border: 1px solid var(--pal-line); border-radius: 7px; padding: 8px; background: var(--SmartThemeBlurTintColor, #24272d); color: var(--SmartThemeBodyColor, #eee); }
+#persona-avatar-library button, .pal-dialog button { cursor: pointer; color: inherit; font: inherit; border: 1px solid var(--pal-line); border-radius: 8px; background: rgba(150, 165, 175, .12); padding: 9px 12px; min-height: 42px; }
+#persona-avatar-library button:disabled, .pal-dialog button:disabled { opacity: .5; cursor: wait; }
+#persona-avatar-library button:hover:enabled, .pal-dialog button:hover:enabled { border-color: var(--pal-accent); }
+#persona-avatar-library button:focus-visible, .pal-dialog button:focus-visible, .pal-dialog select:focus-visible { outline: 2px solid var(--pal-accent); outline-offset: 3px; }
+#persona-avatar-library .pal-actions, #persona-avatar-library .pal-batch { display: flex; gap: 8px; flex-wrap: wrap; }
+#persona-avatar-library .pal-actions > button { flex: 1; }
+#persona-avatar-library .pal-check { display: flex; align-items: center; gap: 9px; margin: 14px 0 7px; cursor: pointer; }
+#persona-avatar-library .pal-check input { width: 20px; height: 20px; margin: 0; flex-shrink: 0; }
+#persona-avatar-library .pal-hint, .pal-dialog .pal-hint { opacity: .72; font-size: .9em; line-height: 1.65; margin: 9px 0; }
+#persona-avatar-library [data-status] { border-left: 3px solid var(--pal-accent); padding: 8px 10px; background: rgba(139, 215, 188, .07); line-height: 1.6; overflow-wrap: anywhere; }
+#persona-avatar-library .pal-error { border-color: #e29898; }
+#persona-avatar-library .pal-about { font-size: .85em; line-height: 1.6; opacity: .72; }
+#persona-avatar-library [hidden] { display: none !important; }
+.pal-native-button { white-space: nowrap; font-size: 12px; }
+dialog.pal-dialog { box-sizing: border-box; width: min(700px, calc(100vw - 24px)); max-width: 700px; max-height: calc(100dvh - 32px); padding: 24px; border: 1px solid var(--pal-line); border-radius: 18px; background: var(--SmartThemeBlurTintColor, #1c2026); color: var(--SmartThemeBodyColor, #edf0f4); box-shadow: 0 20px 100px #0008; overflow-y: auto; overscroll-behavior: contain; text-align: left; }
+dialog.pal-dialog::backdrop { background: #000a; backdrop-filter: blur(4px); }
+.pal-dialog .pal-dialog-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.pal-dialog .pal-eyebrow { font-size: 10px; letter-spacing: .14em; color: var(--pal-accent); }
+.pal-dialog h3 { margin: 7px 0 18px; font-size: 20px; line-height: 1.4; overflow-wrap: anywhere; }
+.pal-dialog .pal-close { padding: 0; width: 42px; font-size: 26px; flex-shrink: 0; }
+.pal-dialog .pal-picker-controls { display: flex; gap: 8px; align-items: flex-end; flex-wrap: wrap; }
+.pal-dialog .pal-picker-controls label { display: grid; gap: 6px; flex: 1; min-width: 135px; font-size: 13px; }
+.pal-dialog .pal-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 16px; }
+.pal-dialog button.pal-tile { aspect-ratio: 1; padding: 4px; border: 2px solid transparent; background: rgba(155, 165, 175, .08); overflow: hidden; }
+.pal-dialog button.pal-tile[aria-pressed="true"] { border-color: var(--pal-accent); box-shadow: 0 0 0 2px #8bd7bc33; }
+.pal-dialog .pal-tile img { display: block; width: 100%; height: 100%; border-radius: 5px; }
+.pal-dialog .pal-picker-status { font-size: 13px; min-height: 22px; line-height: 1.5; color: var(--pal-accent); }
+.pal-dialog .pal-dialog-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-top: 1px solid var(--pal-line); padding-top: 16px; }
+.pal-dialog .pal-credit { font-size: 10px; opacity: .6; line-height: 1.6; flex: 1; }
+.pal-dialog [data-apply] { background: var(--pal-accent); color: #142b25; font-weight: 600; flex-shrink: 0; }
+@media (max-width: 480px) {
+    dialog.pal-dialog { padding: 16px; max-height: calc(100dvh - 20px); }
+    .pal-dialog .pal-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+    .pal-dialog .pal-picker-controls label { flex-basis: 100%; }
+    .pal-dialog .pal-picker-controls button { flex: 1; font-size: 13px; }
+    .pal-dialog h3 { font-size: 18px; }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "sillytavern-persona-avatar-library",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/core.test.mjs",
+    "test:browser": "node tests/browser.mjs"
+  },
+  "dependencies": {
+    "@dicebear/collection": "9.2.4",
+    "@dicebear/core": "9.2.4"
+  },
+  "devDependencies": {
+    "@jimp/plugin-resize": "1.6.0",
+    "esbuild": "0.28.2",
+    "jquery": "3.7.1",
+    "playwright": "1.62.1"
+  }
+}
